@@ -1,0 +1,91 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "University", "University\University.csproj", "{78B2C52F-8D89-4509-B426-2722C9B02695}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A81B0193-F39E-4818-9BC8-D81EDD1E3071} = {A81B0193-F39E-4818-9BC8-D81EDD1E3071}
+		{3F944499-8AC7-41A4-876F-40D1F64B7EA1} = {3F944499-8AC7-41A4-876F-40D1F64B7EA1}
+		{F5525EC7-3737-47A2-8FB7-924E33182242} = {F5525EC7-3737-47A2-8FB7-924E33182242}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "University.NetStandart.DAL", "University.NetStandart.DAL\University.NetStandart.DAL.csproj", "{A81B0193-F39E-4818-9BC8-D81EDD1E3071}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3F944499-8AC7-41A4-876F-40D1F64B7EA1} = {3F944499-8AC7-41A4-876F-40D1F64B7EA1}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "University.NetStandart.Core", "University.NetStandart.Core\University.NetStandart.Core.csproj", "{3F944499-8AC7-41A4-876F-40D1F64B7EA1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "University.NetStandart.Domain", "University.NetStandart.Domain\University.NetStandart.Domain.csproj", "{F5525EC7-3737-47A2-8FB7-924E33182242}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "University.Web.API", "UniversityWebAPI\University.Web.API.csproj", "{48DE7AAB-0673-47F8-9478-1FEE238AE55B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{78B2C52F-8D89-4509-B426-2722C9B02695} = {78B2C52F-8D89-4509-B426-2722C9B02695}
+		{A81B0193-F39E-4818-9BC8-D81EDD1E3071} = {A81B0193-F39E-4818-9BC8-D81EDD1E3071}
+		{3F944499-8AC7-41A4-876F-40D1F64B7EA1} = {3F944499-8AC7-41A4-876F-40D1F64B7EA1}
+		{F5525EC7-3737-47A2-8FB7-924E33182242} = {F5525EC7-3737-47A2-8FB7-924E33182242}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "University.Web.T", "University.Web\University.Web.T.csproj", "{A5E98C43-56A8-4FC1-839E-6D3A4D612EC1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{78B2C52F-8D89-4509-B426-2722C9B02695} = {78B2C52F-8D89-4509-B426-2722C9B02695}
+		{A81B0193-F39E-4818-9BC8-D81EDD1E3071} = {A81B0193-F39E-4818-9BC8-D81EDD1E3071}
+		{3F944499-8AC7-41A4-876F-40D1F64B7EA1} = {3F944499-8AC7-41A4-876F-40D1F64B7EA1}
+		{F5525EC7-3737-47A2-8FB7-924E33182242} = {F5525EC7-3737-47A2-8FB7-924E33182242}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UniversityWeb", "UniversityWeb\UniversityWeb.csproj", "{B7B63EA2-9A07-487F-9CAD-8ED277F92CCC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "University.Web.Main", "University.Web.Main\University.Web.Main.csproj", "{56AC0213-2F1E-474D-87D6-D7EA19D0D3BB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3F944499-8AC7-41A4-876F-40D1F64B7EA1} = {3F944499-8AC7-41A4-876F-40D1F64B7EA1}
+		{F5525EC7-3737-47A2-8FB7-924E33182242} = {F5525EC7-3737-47A2-8FB7-924E33182242}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{78B2C52F-8D89-4509-B426-2722C9B02695}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78B2C52F-8D89-4509-B426-2722C9B02695}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78B2C52F-8D89-4509-B426-2722C9B02695}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78B2C52F-8D89-4509-B426-2722C9B02695}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A81B0193-F39E-4818-9BC8-D81EDD1E3071}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A81B0193-F39E-4818-9BC8-D81EDD1E3071}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A81B0193-F39E-4818-9BC8-D81EDD1E3071}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A81B0193-F39E-4818-9BC8-D81EDD1E3071}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F944499-8AC7-41A4-876F-40D1F64B7EA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F944499-8AC7-41A4-876F-40D1F64B7EA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F944499-8AC7-41A4-876F-40D1F64B7EA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F944499-8AC7-41A4-876F-40D1F64B7EA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5525EC7-3737-47A2-8FB7-924E33182242}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5525EC7-3737-47A2-8FB7-924E33182242}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5525EC7-3737-47A2-8FB7-924E33182242}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5525EC7-3737-47A2-8FB7-924E33182242}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48DE7AAB-0673-47F8-9478-1FEE238AE55B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48DE7AAB-0673-47F8-9478-1FEE238AE55B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48DE7AAB-0673-47F8-9478-1FEE238AE55B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48DE7AAB-0673-47F8-9478-1FEE238AE55B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5E98C43-56A8-4FC1-839E-6D3A4D612EC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5E98C43-56A8-4FC1-839E-6D3A4D612EC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5E98C43-56A8-4FC1-839E-6D3A4D612EC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5E98C43-56A8-4FC1-839E-6D3A4D612EC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7B63EA2-9A07-487F-9CAD-8ED277F92CCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7B63EA2-9A07-487F-9CAD-8ED277F92CCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7B63EA2-9A07-487F-9CAD-8ED277F92CCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7B63EA2-9A07-487F-9CAD-8ED277F92CCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56AC0213-2F1E-474D-87D6-D7EA19D0D3BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56AC0213-2F1E-474D-87D6-D7EA19D0D3BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56AC0213-2F1E-474D-87D6-D7EA19D0D3BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56AC0213-2F1E-474D-87D6-D7EA19D0D3BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DB18687D-63DC-400E-9B30-CAA22F5E401C}
+	EndGlobalSection
+EndGlobal

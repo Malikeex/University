@@ -1,0 +1,94 @@
+﻿@using University.NetStandart.Core.Models;
+
+@model IEnumerable<Students>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "Home page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<style>
+    table {
+        width: 100%;
+        border: none;
+        margin-bottom: 20px;
+    }
+
+        table thead th {
+            font-weight: bold;
+            text-align: left;
+            border: none;
+            padding: 10px 15px;
+            background: #d8d8d8;
+            font-size: 14px;
+        }
+
+        table thead tr th:first-child {
+            border-radius: 8px 0 0 8px;
+        }
+
+        table thead tr th:last-child {
+            border-radius: 0 8px 8px 0;
+        }
+
+        table tbody td {
+            text-align: left;
+            border: none;
+            padding: 10px 15px;
+            font-size: 14px;
+            vertical-align: top;
+        }
+
+        table tbody tr:nth-child(even) {
+            background: #f3f3f3;
+        }
+
+        table tbody tr td:first-child {
+            border-radius: 8px 0 0 8px;
+        }
+
+        table tbody tr td:last-child {
+            border-radius: 0 8px 8px 0;
+        }
+</style>
+<form a asp-action="Create" asp-controller="Students" method="get">
+    <button type="submit">Create a Student</button>
+</form>
+<h2>List of Students</h2>
+<table style="width:50%">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Course</th>
+            <th>Sex</th>
+            <th>Average</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var student in Model)
+        {
+            <tr>
+                <td>@student.Name</td>
+                <td>@student.Course</td>
+                <td>@student.Sex</td>
+                <td>@student.Average</td>
+                <td>
+                    <form asp-action="Update" asp-controller="Students" asp-route-Id="@student.Id" method="get">
+                        <button type="submit">Update</button>
+                    </form>
+                </td>
+                <td>
+                    <form asp-action="Delete" asp-controller="Students" asp-route-Id="@student.Id" method="post">
+                        <button type="submit">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

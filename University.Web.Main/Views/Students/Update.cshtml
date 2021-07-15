@@ -1,0 +1,39 @@
+﻿@using University.NetStandart.Core.Models;
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model Students
+@{
+    ViewData["Title"] = "Home page";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h1>Update</h1>
+
+<h4>Students</h4>
+<hr />
+@using (Html.BeginForm())
+{
+    <div class="editor-label">
+        @Html.DisplayNameFor(m => m.Name):
+        <p>@Html.EditorFor(m => m.Name)
+    </div>
+    <div class="editor-label">
+        @Html.DisplayNameFor(m => m.Sex):
+        <p>@Html.EditorFor(m => m.Sex)
+    </div>
+    <div class="editor-label">
+        @Html.DisplayNameFor(m => m.Course):
+        <p>@Html.EditorFor(m => m.Course)
+    </div>
+    <div class="editor-label">
+        @Html.DisplayNameFor(m => m.Average):
+        <p>@Html.EditorFor(m => m.Average)
+    </div>
+    <p><input type="submit" value="Изменить" /></p>
+}
+<form a asp-action="Index" asp-controller="Students" method="get">
+    <button type="submit">Back to List</button>
+</form>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
